@@ -30,6 +30,10 @@ extension
 * png
 * zip
 
+### 檔案切割  ###
+單一檔案記錄過多東西, 必須切分
+
+
 ## directory name ##
 1_2_3
 
@@ -38,6 +42,9 @@ extension
 3. date 
 
 ## directory architecture ##
+資料夾是分類
+數量過多 and (種類 or 目的[內容]不同), 將相同的聚合. 
+用目的[內容]分類
 
 ## git ##
 
