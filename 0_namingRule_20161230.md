@@ -33,7 +33,6 @@ extension
 ### 檔案切割  ###
 單一檔案記錄過多東西, 必須切分
 
-
 ## directory name ##
 1_2_3
 
@@ -56,6 +55,8 @@ feature_[operation]_[目的(內容)]
 * create
 * modify
 * delete
+
+目的或內容, 是功能不是檔案, 這樣會重複branch
 
 ### git commit message ###
 *regex word
