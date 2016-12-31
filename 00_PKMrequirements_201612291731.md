@@ -7,7 +7,24 @@
   * git
   * git flow
 * permission(public, protected, private)
+  * protected
+	0. 中英文的編碼(unicode to number ?)
+	1. 位移和替換(ROT)(caesar and chinese cipher)
+	2. qrcode(remove point)
+    3. base64(change table) 
+  * private
+    * AES 256(CBC?)
 * 強規則(方便轉移到下個版本)
+
+## permission ##
+public 
+===
+
+protected
+===
+
+private
+===
 
 ## portable ##
 * github
