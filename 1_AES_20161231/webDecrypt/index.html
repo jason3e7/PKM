@@ -1,0 +1,106 @@
+<html>
+<head>
+<link href="bootstrap-3.3.7/css/bootstrap.min.css" rel="stylesheet">
+<script type="text/javascript" src="aes-2.1.0.js"></script>
+<script type="text/javascript" src="jquery-3.1.1.min.js"></script>
+</head>
+<body>
+<div class="container theme-showcase" role="main">
+<h1>AES_CBC_256</h1>
+
+<div class="form-group">
+  <label for="key">key(default:00000000000000000000000000000000):</label>
+  <input type="text" class="form-control" id="key" minlength="32" maxlength="32">
+</div>
+<div class="form-group">
+  <label for="iv">iv(default:0000000000000000):</label>
+  <input type="text" class="form-control" id="iv" minlength="16" maxlength="16">
+</div>
+<div class="form-group">
+  <label for="plaintext">plaintext:</label>
+  <textarea class="form-control" rows="3" id="plaintext" placeholder="0123456789ABCDEF"></textarea>
+</div>
+<div class="form-group">
+  <label for="ciphertext">ciphertext:</label>
+  <textarea class="form-control" rows="3" id="ciphertext" placeholder="49LiQFZExrkrWvxt4F90XA=="></textarea>
+</div>
+<div class="form-group">
+  <label for="output">output:</label>
+  <textarea class="form-control" rows="3" id="output"></textarea>
+</div>
+<button type="button" id="encrypt" class="btn btn-default">encrypt</button>
+<button type="button" id="decrypt" class="btn btn-default">decrypt</button>
+</div>
+<script type="text/javascript">
+
+function init() {
+	if ($("#key").val() === "") {
+		$("#key").val("00000000000000000000000000000000");
+	}
+	if ($("#iv").val() === "") {
+		$("#iv").val("0000000000000000");
+	}
+}
+
+//PKCS7
+function appendPadding(bytes, size) {
+	if (bytes.length === size)
+		return bytes;
+	var paddingLen = size - (bytes.length % size);
+	for (var i = 0; i < paddingLen; i++) {
+		bytes.push(paddingLen);
+	}
+	return bytes;
+}
+
+function removePadding(bytes) {
+	var paddingLen = bytes[bytes.length - 1]
+	bytes.splice(bytes.length - paddingLen, paddingLen)
+	return bytes;
+}
+
+$("#encrypt").click(function() {
+	init();
+	var key = appendPadding(aesjs.util.convertStringToBytes($("#key").val()), 32);
+	// The initialization vector, which must be 16 bytes
+	var iv = appendPadding(aesjs.util.convertStringToBytes($("#iv").val()), 16);
+	console.log(key);
+	console.log(iv);	
+
+	// Convert text to bytes
+	var text = $("#plaintext").val();
+	var textBytes = appendPadding(aesjs.util.convertStringToBytes(text), 16);
+
+	var aesCbc = new aesjs.ModeOfOperation.cbc(key, iv);
+	var encryptedBytes = aesCbc.encrypt(textBytes);
+
+	// var ciphertext = btoa(JSON.stringify(encryptedBytes));
+	var ciphertext = btoa(String.fromCharCode.apply(null, new Uint8Array(encryptedBytes)));	
+	$("#output").html(ciphertext);
+});
+
+$("#decrypt").click(function() {
+	init();
+	var key = appendPadding(aesjs.util.convertStringToBytes($("#key").val()), 32);
+	// The initialization vector, which must be 16 bytes
+	var iv = appendPadding(aesjs.util.convertStringToBytes($("#iv").val()), 16);
+	console.log(key);
+	console.log(iv);
+	
+	var ciphertext = $("#ciphertext").val();
+	// var encryptedBytes = JSON.parse(atob(ciphertext));
+	var encryptedBytes = Uint8Array.from(atob(ciphertext), c => c.charCodeAt(0));
+
+	// The cipher-block chaining mode of operation maintains internal
+	// state, so to decrypt a new instance must be instantiated.
+	var aesCbc = new aesjs.ModeOfOperation.cbc(key, iv);
+	var decryptedBytes = aesCbc.decrypt(encryptedBytes);
+
+	// Convert our bytes back into text
+	var decryptedText = aesjs.util.convertBytesToString(decryptedBytes);
+	$("#output").html(decryptedText);
+});
+</script>
+<script src="bootstrap-3.3.7/js/bootstrap.min.js"></script>
+</body>
+</html>
