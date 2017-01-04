@@ -67,7 +67,7 @@ feature_[operation]_[目的(內容)]
 ### git commit message ###
 *regex word
 
-[operation] [file name] [目的(內容)]
+[operation] [內容] [目的]
 
 * add
 * fix
