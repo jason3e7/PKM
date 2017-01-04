@@ -8,10 +8,16 @@
 
 1. 重要性(一位數字)
   * 0 (4%)
-  * 2 (20%)
+  * 2 attension(20%)
   * 9 封存
 2. 內容(目的)
 3. date & (time)
+
+date 和 git 的衝突
+
+因為 git 不同檔名視為不同檔案
+
+有 git 可以拿掉日期
 
 ## 並不是所有檔案都要命名!? ##
 使用資料夾封裝
@@ -61,7 +67,7 @@ feature_[operation]_[目的(內容)]
 ### git commit message ###
 *regex word
 
-[operation] [file name] [目的(內容)]
+[operation] [內容] [目的]
 
 * add
 * fix
@@ -70,6 +76,8 @@ feature_[operation]_[目的(內容)]
 ## temp  ##
 大小寫呢 ?
 小寫開頭 合併字 後面大寫 能辨識為主
+
+客觀資訊 vs. 個人感想
 
 縮寫字呢?
 數字呢?
