@@ -6,25 +6,44 @@
 
 1_2_3
 
-1. 重要性
+1. 重要性(一位數字)
+  * 0 (4%)
+  * 2 (20%)
+  * 9 封存
 2. 內容(目的)
 3. date & (time)
+
+## 並不是所有檔案都要命名!? ##
+使用資料夾封裝
 
 ## file name ##
 1_2_3.extension
 
-1. 重要性(兩位數字)
+1. 重要性(一位數字)
 2. 內容(目的)
 3. date & (time)
+
+extension
+* txt
+* md
+* jpg
+* png
+* zip
+
+### 檔案切割  ###
+單一檔案記錄過多東西, 必須切分
 
 ## directory name ##
 1_2_3
 
-1. 重要性(兩位數字)
+1. 重要性(一位數字)
 2. 內容(目的)
 3. date 
 
 ## directory architecture ##
+資料夾是分類
+數量過多 and (種類 or 目的[內容]不同), 將相同的聚合. 
+用目的[內容]分類
 
 ## git ##
 
@@ -36,6 +55,8 @@ feature_[operation]_[目的(內容)]
 * create
 * modify
 * delete
+
+目的或內容, 是功能不是檔案, 這樣會重複branch
 
 ### git commit message ###
 *regex word
