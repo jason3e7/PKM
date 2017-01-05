@@ -14,15 +14,29 @@
 </div>
 <button type="button" id="encode" class="btn btn-default">encode</button>
 <div id="qrcode"></div>
+<div class="form-group">
+  <label for="output">output</label>
+  <textarea class="form-control" rows="3" id="output"></textarea>
+</div>
 </div>
 <script type="text/javascript">
 
 var qrcode = new QRCode(document.getElementById("qrcode"));
 
 $("#encode").click(function() {
+	showImage();
+	setTimeout(showBase64, 100);
+});
+
+function showImage() {
 	qrcode.clear();
 	qrcode.makeCode($("#input").val());
-});
+}
+
+function showBase64() {
+	$("#output").val($("#qrcode img").attr("src").match(/data:image\/png;base64,(\S+)/)[1]);
+}
+
 
 </script>
 <script src="bootstrap-3.3.7/js/bootstrap.min.js"></script>

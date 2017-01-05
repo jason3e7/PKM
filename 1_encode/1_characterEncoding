@@ -1,0 +1,34 @@
+# ASCII #
+American Standard Code for Information Interchange
+
+character encoding standard
+
+# Unicode #
+Unicode is a computing industry standard for the consistent encoding
+
+# UTF-8 #
+8-bit Unicode Transformation Format
+
+= selfExperience =
+以上三種都是字元編碼法
+
+* ASCII
+  * 用 bit 存 
+  * 8 bits
+  * 主要顯示英文, 符號
+* Unicode
+  * Unicode 9
+    * ISO/IEC 10646:2014 plus Amendments 1 and 2
+  * 用數字存 
+  * 定義字元to數字(table) 
+ 
+* UTF-8
+  * 用 bit 存
+  * UTF-8是UNICODE的一種變長度的編碼表達方式
+  * ASCII是UTF-8的一個子集。因為一個純ASCII字符串也是一個合法的UTF-8字符串，所以現存的ASCII文本不需要轉換。
+
+
+= Next =
+* GBK
+* Big5
+
