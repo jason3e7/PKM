@@ -2,7 +2,24 @@
 <head>
 <link href="bootstrap-3.3.7/css/bootstrap.min.css" rel="stylesheet">
 <script type="text/javascript" src="jquery-3.1.1.min.js"></script>
-<script type="text/javascript" src="qrcode-0.0.1.min.js "></script>
+<script type="text/javascript" src="qrcode-0.0.1.min.js"></script>
+<script type="text/javascript" src="jsqrcode_src/grid.js"></script>
+<script type="text/javascript" src="jsqrcode_src/version.js"></script>
+<script type="text/javascript" src="jsqrcode_src/detector.js"></script>
+<script type="text/javascript" src="jsqrcode_src/formatinf.js"></script>
+<script type="text/javascript" src="jsqrcode_src/errorlevel.js"></script>
+<script type="text/javascript" src="jsqrcode_src/bitmat.js"></script>
+<script type="text/javascript" src="jsqrcode_src/datablock.js"></script>
+<script type="text/javascript" src="jsqrcode_src/bmparser.js"></script>
+<script type="text/javascript" src="jsqrcode_src/datamask.js"></script>
+<script type="text/javascript" src="jsqrcode_src/rsdecoder.js"></script>
+<script type="text/javascript" src="jsqrcode_src/gf256poly.js"></script>
+<script type="text/javascript" src="jsqrcode_src/gf256.js"></script>
+<script type="text/javascript" src="jsqrcode_src/decoder.js"></script>
+<script type="text/javascript" src="jsqrcode_src/qrcode.js"></script>
+<script type="text/javascript" src="jsqrcode_src/findpat.js"></script>
+<script type="text/javascript" src="jsqrcode_src/alignpat.js"></script>
+<script type="text/javascript" src="jsqrcode_src/databr.js"></script>
 </head>
 <body>
 <div class="container theme-showcase" role="main">
@@ -13,6 +30,7 @@
   <input type="text" class="form-control" id="input">
 </div>
 <button type="button" id="encode" class="btn btn-default">encode</button>
+<button type="button" id="decode" class="btn btn-default">decode</button>
 <div id="qrcode"></div>
 <div class="form-group">
   <label for="output">output</label>
@@ -21,7 +39,7 @@
 </div>
 <script type="text/javascript">
 
-var qrcode = new QRCode(document.getElementById("qrcode"));
+var qrEncode = new QRCode(document.getElementById("qrcode"));
 
 $("#encode").click(function() {
 	showImage();
@@ -29,14 +47,20 @@ $("#encode").click(function() {
 });
 
 function showImage() {
-	qrcode.clear();
-	qrcode.makeCode($("#input").val());
+	qrEncode.clear();
+	qrEncode.makeCode($("#input").val());
 }
 
 function showBase64() {
 	$("#output").val($("#qrcode img").attr("src").match(/data:image\/png;base64,(\S+)/)[1]);
 }
 
+$("#decode").click(function() {
+	qrcode.callback = function(output) {
+		$("#input").val(output);
+	};
+	qrcode.decode("data:image/png;base64," + $("#output").val());
+});
 
 </script>
 <script src="bootstrap-3.3.7/js/bootstrap.min.js"></script>
