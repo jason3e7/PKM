@@ -17,6 +17,9 @@ protect
 private
 - - -
 
+# coding style #
+* two spaces
+
 # 分類? #
 客觀資訊 vs. 個人感想
 

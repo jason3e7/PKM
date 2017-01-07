@@ -35,7 +35,6 @@
 ### markdown ###
 * 語法
 * 語言和符號
-* two spaces or tab or four spaces
 
 #### temp ####
 1. 使用中文, 英文, 底線(正規表示式word)
