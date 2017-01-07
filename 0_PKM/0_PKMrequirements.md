@@ -6,25 +6,15 @@
 * version control
   * git
   * git flow
-* permission(public, protected, private)
+* permission(public, protect, private)
   * protected
-	0. 中英文的編碼(unicode to number ?)
+	0. 中英文的編碼(character encoding)
 	1. 位移和替換(ROT)(caesar and chinese cipher)
 	2. qrcode(remove point)
     3. base64(change table) 
   * private
-    * AES 256(CBC?)
+    * AES 256(CBC)
 * 強規則(方便轉移到下個版本)
-
-## permission ##
-public 
-===
-
-protected
-===
-
-private
-===
 
 ## portable ##
 * github
@@ -45,7 +35,6 @@ private
 ### markdown ###
 * 語法
 * 語言和符號
-* two spaces or tab or four spaces
 
 #### temp ####
 1. 使用中文, 英文, 底線(正規表示式word)
