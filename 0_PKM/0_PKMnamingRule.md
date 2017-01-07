@@ -1,21 +1,6 @@
-# naming rule base #
-* 中文a~zA~Z0~9_
-  * 符號, 空白呢?
-* three words
-* length 32words
-
-1_2_3
-
+# baseline #
 1. 重要性(一位數字)
-  * 0 (4%)
-  * 2 attension(20%)
-  * 9 封存
 2. 內容(目的)
-3. date & (time)
-
-date 和 git 的衝突
-
-因為 git 不同檔名視為不同檔案
 
 有 git 可以拿掉日期
 
@@ -23,28 +8,19 @@ date 和 git 的衝突
 使用資料夾封裝
 
 ## file name ##
-1_2_3.extension
+1_2.extension
 
 1. 重要性(一位數字)
 2. 內容(目的)
-3. date & (time)
-
-extension
-* txt
-* md
-* jpg
-* png
-* zip
 
 ### 檔案切割  ###
 單一檔案記錄過多東西, 必須切分
 
 ## directory name ##
-1_2_3
+1_2
 
 1. 重要性(一位數字)
 2. 內容(目的)
-3. date 
 
 ## directory architecture ##
 資料夾是分類
@@ -54,7 +30,7 @@ extension
 ## git ##
 
 ### git branch feature naming ###
-*regex word
+* regex word
 
 feature_[operation]_[目的(內容)]
 
@@ -76,12 +52,6 @@ feature_[operation]_[目的(內容)]
 ## temp  ##
 大小寫呢 ?
 小寫開頭 合併字 後面大寫 能辨識為主
-
-客觀資訊 vs. 個人感想
-
-主要以個人感想為主軸 直接放在各個項目中 
-
-獨立出來的比較像是自己的創作
 
 縮寫字呢?
 數字呢?
