@@ -47,6 +47,8 @@ read
 unread
 ===
 # Anime #
+言葉之庭
+
 # Comic #
 # Game #
 
