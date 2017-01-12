@@ -40,10 +40,17 @@ read
 * 加速世界
 
 # game #
-* clash of clans
-  * google account
 
-= pokemonGO =
+## 暗黑破壞神2 ##
+
+## RO ##
+## League of Legends ##
+英雄聯盟
+
+## clash of clans ##
+google account
+
+## pokemonGO ##
 神奇寶貝看IV和技能決定強弱
 
 [圖鑑pdf](/files/Pokemon Go 圖鑑(2016.08.11).pdf)
