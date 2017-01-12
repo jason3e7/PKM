@@ -14,6 +14,9 @@ unread
 read
 ===
 # 20 #
+* [Brené Brown on Empathy](https://www.youtube.com/watch?v=1Evwgu369Jw)
+  * [同理心的力量](https://www.youtube.com/watch?v=E-AfeaRD_IA)
 * [Amy Cuddy:Your body language shapes who you are](https://www.ted.com/talks/amy_cuddy_your_body_language_shapes_who_you_are)
+
 
 * [Simon Sinek - Millennials in the Workplace](https://www.youtube.com/watch?v=5MC2X-LRbkE)

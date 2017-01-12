@@ -1,3 +1,4 @@
+* [【好樂團 GoodBand】我把我的青春給你 Demo](https://www.youtube.com/watch?v=h5xSuJYhp38)
 * [寫手_To My World](https://www.youtube.com/watch?v=CGjeT6Qj2pc)
 * [好樂團_我把我的青春給你](https://www.youtube.com/watch?v=9MMIB61e6sM)
 
@@ -13,3 +14,4 @@
 * [顯然樂隊_低賤的人](https://www.youtube.com/watch?v=yo10PBbt_ZQ)
 * [康士坦的變化球_擱淺的人](https://www.youtube.com/watch?v=NhJCYJs0XIA)
 * [怕胖團_魚](https://www.youtube.com/watch?v=Dnz-BTz9eDU)
+* [顯然樂隊-低賤的人](https://www.youtube.com/watch?v=yo10PBbt_ZQ)
