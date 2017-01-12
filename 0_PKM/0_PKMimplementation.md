@@ -34,7 +34,7 @@ How to mark?
 # cloud #
 * github
 * dropbox
-
+  * 注意private不要明碼上去, protect 還好
 private
 - - -
 amcccDC13ivS+8Y/HzhWhe5ltxFqN/Z737tO+g4VE66XrwGExkIVyM/9ih9tu8IVJU5IcMQMxRaOXWYa8Z5Ezo+X1Jv7jXmUB0nrJiwhPrNWY/kAB3EaycBybVu0HgY9LW0L/0oE7yLB5yXdJAdWRmKb/H1LsHAFTPyDW/jP0zHZGJtP+vVgQ0UM/V0tM/5ozONCjKIDlyGOwqAlVrt07yVGQFlLpyyG//c2TqEWfKM=
