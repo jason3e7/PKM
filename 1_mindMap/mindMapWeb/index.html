@@ -1,0 +1,39 @@
+<html>
+  <head>
+    <link type="text/css" rel="stylesheet" href="css/jsmind.css" />
+    <script type="text/javascript" src="js/jsmind.js"></script>
+  </head>
+  <body>
+    <div id="jsmind_container"></div>
+
+    <script type="text/javascript">
+      var mind = {
+        "meta" : {
+          "name" : "demo",
+          "author" : "jason3e7@gmail.com",
+          "version" : "0.1"
+        },
+        "format":"node_tree",
+        "data":{"id":"root","topic":"Demo","children":[
+          {"id":"left","topic":"left","direction":"left","children":[
+            {"id":"l1","topic":"l1"},
+            {"id":"l2","topic":"l2"},
+            {"id":"l3","topic":"l3"},
+            {"id":"l4","topic":"l4"}
+          ]},
+          {"id":"right","topic":"right","direction":"right","children":[
+            {"id":"r1","topic":"r1"},
+            {"id":"r2","topic":"r2"}
+          ]}
+        ]}
+      };
+      var options = {
+        container:'jsmind_container',
+        theme:'greensea',
+        editable:false
+      };
+      var jm = new jsMind(options);
+      jm.show(mind);
+    </script>
+  </body>
+</html>
