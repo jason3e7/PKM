@@ -1,3 +1,5 @@
+* [Frandé_我多麼想成為你的鹿](https://www.youtube.com/watch?v=Z95xtHab_0A)
+* [程璧_我想和你虛度時光](https://www.youtube.com/watch?v=AK6pJmeqR6M)
 * [【好樂團 GoodBand】我把我的青春給你 Demo](https://www.youtube.com/watch?v=h5xSuJYhp38)
 * [寫手_To My World](https://www.youtube.com/watch?v=CGjeT6Qj2pc)
 * [好樂團_我把我的青春給你](https://www.youtube.com/watch?v=9MMIB61e6sM)

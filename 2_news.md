@@ -1,3 +1,7 @@
+# 返校-Detention #
+Red Candle Games 赤燭遊戲
+
+
 # 同性婚姻 #
 https://www.zhihu.com/question/40277320/answer/85846400?utm_campaign=weekly205&utm_source=weekly-digest&utm_medium=email
 
