@@ -10,6 +10,7 @@ read
 * 地球防衛少年
 * Air
 * 新機動戰記GUNDAM W
+* 植木的法則
 
 ## 25 ##
 * 死亡遊行
@@ -27,6 +28,7 @@ read
 
 ## 28 ##
 * [ C ] THE MONEY OF SOUL AND POSSIBILITY CONTROL
+* 通靈王
 
 ## 30 ##
 * code geass
