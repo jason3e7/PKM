@@ -1,6 +1,21 @@
+# 烏雲關站 #
+http://www.wooyun.org/
+
+# 刷單客 #
+[Who's sent me all this tat? Answer: Chinese 『brushers'](http://www.thetimes.co.uk/edition/news/whos-sent-me-all-this-tat-answer-chinese-brushers-h2xwdcmq3)
+
+# Note 7 起火 #
+[三星公佈 Note 7 起火時間調查結果，原因就是它！](https://www.soft4fun.net/tech/news/samsung-note-7-incident-report.htm)
+
 # 返校-Detention #
 Red Candle Games 赤燭遊戲
 
+## self ##
+看完實況, 再看心得, 
+感覺很用心的把文化內涵 藏在裡面了
+真的去了解的話 還蠻沈重的
+* [[心得] 《返校》再玩一遍的原因是...](https://www.ptt.cc/bbs/Steam/M.1484898699.A.C07.html)
+* [[閒聊] 返校 感想](https://www.ptt.cc/bbs/C_Chat/M.1484556962.A.469.html)
 
 # 同性婚姻 #
 https://www.zhihu.com/question/40277320/answer/85846400?utm_campaign=weekly205&utm_source=weekly-digest&utm_medium=email
